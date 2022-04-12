@@ -1,0 +1,24 @@
+{
+  "name": "storefront",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next.js": "^1.0.3",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@stripe/stripe-js": "^1.27.0",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.2",
+    "next": "^12.1.4",
+    "stripe": "^8.216.0"
+  }
+}
