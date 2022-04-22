@@ -8,4 +8,5 @@ with our speedy shipping you can have your new coffee beans the next day
 
 ## Safe and reliable
 _Order now_
-With Stripe a secure payment processing application you can be sure that your payment infomation will be safe in our hands
+With Stripe a secure payment processing application you can be sure that your payment infomation will be safe in our hands. 
+Once your order is in we ship right away.
