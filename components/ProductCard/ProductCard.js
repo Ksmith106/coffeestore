@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'
+import Img from 'next/Image';
 import {productCard, price, name, description} from './styles.module.scss'
 
 
@@ -13,24 +13,18 @@ function ProductCard ({children, product, checkoutRequest, ...props})  {
   return (
        <aside className={productCard}>
          <header>
-           <Image
-              loader={myLoader}
-              src={imageUrl}
-              alt={productName}
-              width={418}
-              height={240}
-              quality={50}
-              layout="intrinsic"
-           />
-        
+           <Img
+              
+              src={imageUrl} alt={productName} width='418' height='240' />        
          </header>
+         
           <h2 className={name}>{productName}</h2>
           <p className={price}>${productPrice}</p>
           <p className={description}>{productDescription}</p>
           <footer>
-            <form action="/api/test" method="POST">
+            <form action="/api/chekout" method="POST">
               <input type="hidden" name="uid" value={uid}/>
-              <button type="submit">Buy Now</button>
+              <button type="submit">Order Now</button>
             </form>
           </footer>
        </aside>

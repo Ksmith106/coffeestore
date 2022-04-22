@@ -12,13 +12,15 @@
     "next.js": "^1.0.3",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "strip": "^3.0.0",
+    "vercel": "^24.1.0"
   },
   "devDependencies": {
     "@stripe/stripe-js": "^1.27.0",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.2",
-    "next": "^12.1.4",
-    "stripe": "^8.216.0"
+    "next": "^12.1.5",
+    "stripe": "^8.217.0"
   }
 }

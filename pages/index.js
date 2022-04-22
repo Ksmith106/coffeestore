@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import PageTitle from "../components/PageTitle/PageTitle";
 import ProductCard from "../components/ProductCard/ProductCard";
-import {pane} from "./../styles/home.module.scss"
+import {loadStripe} from "@stripe/stripe-js";
+import {pane} from "./../styles/home.module.scss";
 
  
  
@@ -11,6 +12,8 @@ export default function Home(props) {
    
 
 
+const stripPromise = loadStripe (process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+
      return(
           <>
           <Head>
@@ -19,7 +22,7 @@ export default function Home(props) {
           <meta name="keywords" content="Coffee, top of the morning, black, blonde, kicking horse"/>
            <title>Coffeeshop</title>
           </Head>
-           <PageTitle tagline="product specials" title="Storefront"/>
+           <PageTitle tagline="Coffee Selections" title="Everything Coffee"/>
            <main className={pane}>
                {  products.map(product=> <ProductCard  key={product.uid}   product={product}/>)}
            </main>
@@ -28,16 +31,17 @@ export default function Home(props) {
 }
 
 
- 
+
 
 export async function getStaticProps(){
   
-    const res = await fetch('https://kennethsstorefront-default-rtdb.firebaseio.com/products.json')
+    const res = await fetch('https://kennethsstorefront-default-rtdb.firebaseio.com/coffee.json')
     const productData = await res.json();
     const products = Object.values(productData)
  return {
       props:{
            products
+           
       },
       revalidate: 60,
  }
