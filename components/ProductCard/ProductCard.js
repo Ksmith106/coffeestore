@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'next/Image';
+
 import {productCard, price, name, description} from './styles.module.scss'
 
 
