@@ -1,28 +1,11 @@
-# Accept a Payment with Stripe Checkout
+# Rise Coffee
 
-Stripe Checkout is the fastest way to get started with payments. Included are some basic build and run scripts you can use to start up the application.
-[Test Card Numbers](https://stripe.com/docs/testing)
-[Stripe.js Docs](https://stripe.com/docs/js)
-[Stripe Docs Accept Payments](https://stripe.com/docs/payments?payments=popular)
+Consumers demand coffe every morning to wake up. What's better than having your coffee shipped directly to you?
 
-### Install Stripe
-1. Build the application
-~~~shell
-$  npm install -D stripe @stripe/stripe-js next
-~~~
+### Rise Coffee Storefront
+_Quick to your home_
+with our speedy shipping you can have your new coffee beans the next day
 
-
-### Stripe Keys
-1. You will need a copy of your Stripe API keys. These are located in the Developers panel in API keys. Make sure your in test move secret key and publishable k and public keys.
-
- 
-
-### Next.js Vercel Environmental Variables
-Next.js comes with built-in support for environment variables, which allows you to check stripe in development. Add your stripe
-[Next.js Docs Environmental Variables](https://nextjs.org/docs/basic-features/environment-variables).  
-
-You will need to setup both the secret and  
-~~~env
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_12345
-STRIPE_SECRET_KEY=sk_12345
-~~~
+## Safe and reliable
+_Order now_
+With Stripe a secure payment processing application you can be sure that your payment infomation will be safe in our hands

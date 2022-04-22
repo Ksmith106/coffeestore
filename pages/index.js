@@ -3,6 +3,7 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import ProductCard from "../components/ProductCard/ProductCard";
 import {loadStripe} from "@stripe/stripe-js";
 import {pane} from "./../styles/home.module.scss";
+import {Button} from "../components/Button"
 
  
  

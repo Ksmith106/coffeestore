@@ -11,10 +11,10 @@ export default async function handler(req, res) {
       const session = await stripe.checkout.sessions.create({
         line_items: [
           {
-            name:product.productName,
-            description:product.productDescription,
-            images:[product.imageUrl],
-            amount: product.productPrice=100,
+            name:"Best selection of coffee in the world",
+            description:"best selection of coffee ever",
+            images:['https://firebasestorage.googleapis.com/kennethsstorefront.appspot.com/o/images1850.jpeg?alt=1850coffee'],
+            amount: "50",
             currency:"CAD",
             quantity:1
 

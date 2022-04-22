@@ -14,7 +14,6 @@ function ProductCard ({children, product, checkoutRequest, ...props})  {
        <aside className={productCard}>
          <header>
            <Img
-              
               src={imageUrl} alt={productName} width='418' height='240' />        
          </header>
          
